@@ -1,0 +1,24 @@
+{
+  "name": "event-emitter-proxy",
+  "version": "0.1.0",
+  "description": "A proxy for EventEmitter objects. The proxied object may be swapped by another object, which will remove the event handlers from the old object and attach them to the new one.",
+  "main": "src/EventEmitterProxy.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/suite.coffee",
+    "browserify": "browserify src/EventEmitterProxy.js -s EventEmitterProxy > dist/EventEmitterProxy.js",
+    "minify": "uglifyjs dist/EventEmitterProxy.js -o dist/EventEmitterProxy.min.js",
+    "build": "npm run browserify && npm run minify"
+  },
+  "author": "Digisfera (m.cabral@digisfera.com)",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^10.2.0",
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5",
+    "uglify-js": "^2.4.21"
+  }
+}

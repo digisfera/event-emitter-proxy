@@ -1,0 +1,10 @@
+{
+  "browser": true,
+  "browserify": true,
+  "globalstrict": true,
+  "undef": true,
+  "unused": true,
+  "eqnull": true,
+  "sub": true,
+  "mocha": true
+}
