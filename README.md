@@ -25,11 +25,10 @@ Calls `object.addEventListener()` with the same arguments. If `setObject()` is c
 
 ### proxy.removeEventListener()
 
-### proxy.destroy()
 
-Calls `removeEventListener()` for all events and sets `object` to `null`.
+### addEventListenerProxy()
+
+The proxy itself is an event emitter. It emits the `objectChange` event. Use this method to listen to it.
 
 
-### addEventListenerProxy
-
-The proxy itself is an event emitter. It emits the event `objectChange`.
+### removeEventListenerProxy()
